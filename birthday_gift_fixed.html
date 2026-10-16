@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e3f4ff">
+<title>For Arshad Anwar Navid ♡</title>
+<style>
+:root{--pink:#80c9f5;--deep:#438fc7;--rose:#ccecff;--cream:#f7fcff;--ink:#35536b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(145deg,#f7fcff,#dff3ff 48%,#f4fbff);color:var(--ink);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+button,input{font:inherit}
+button{cursor:pointer}
+#sky{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.floaty{position:absolute;bottom:-40px;animation:rise linear infinite;opacity:.68}
+@keyframes rise{to{transform:translateY(-115vh) rotate(30deg);opacity:0}}
+main{position:relative;z-index:1;width:min(820px,92%);margin:auto;padding:26px 0 55px;text-align:center}
+.bear-doodle{font-size:2.2rem;display:inline-block;filter:drop-shadow(0 5px 5px #6aa8d022);animation:bob 2.4s ease-in-out infinite}.bear-row{display:flex;justify-content:center;align-items:center;gap:16px;margin:14px auto 4px}.bear-sticker{font-size:2.6rem;background:#ffffffa8;border:1px solid #ccecff;border-radius:22px;padding:10px 13px;box-shadow:0 8px 20px #4e9bd014}.cloud{position:absolute;font-size:2rem;opacity:.65;pointer-events:none}.pill{display:inline-block;border:1px solid #b8e3ff;border-radius:99px;padding:8px 14px;background:#ffffffc9;font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}
+h1{font-weight:normal;color:var(--deep);font-size:clamp(2.4rem,9vw,5.4rem);line-height:1.02;margin:22px 0 12px}
+h1 .name{display:block;font-size:.57em;line-height:1.15;margin-top:12px;overflow-wrap:anywhere}
+h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:normal;color:#438fc7;margin:8px 0 14px}
+p{line-height:1.75}
+.lead{max-width:590px;margin:0 auto 24px;font-size:1.08rem}
+.card{margin:20px 0;padding:clamp(20px,5vw,36px);border:1px solid #c9eaff;border-radius:25px;background:#ffffffdf;box-shadow:0 14px 42px #427ca010;backdrop-filter:blur(5px)}
+button{border:0;border-radius:99px;padding:13px 20px;color:white;background:linear-gradient(135deg,#92d8ff,#5da9e0);font: bold  .95rem Arial,sans-serif;box-shadow:0 7px 20px #4e9bd030;transition:transform .2s}
+button:hover{transform:translateY(-2px)}
+button.secondary{color:#438fc7;background:#eaf7ff;border:1px solid #b9e4ff;box-shadow:none}
+.cake{font-size:5rem;display:block;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px)}}
+.hidden{display:none!important}
+.page{display:none;min-height:62vh;opacity:0;transform-origin:center center}
+.page.active{display:block;animation-duration:1.15s;animation-fill-mode:both;animation-timing-function:cubic-bezier(.2,.75,.25,1)}
+/* Each page has its own soft, dreamy entrance */
+.page.active[data-page="0"]{animation-name:welcomeBloom}
+.page.active[data-page="1"]{animation-name:cakeFloatIn}
+.page.active[data-page="2"]{animation-name:letterUnfold}
+.page.active[data-page="3"]{animation-name:memoryDrift}
+.page.active[data-page="4"]{animation-name:finalSparkle}
+.page.leaving{display:block;animation:pageLeave .48s ease both;pointer-events:none;position:absolute;left:0;right:0;width:100%}
+@keyframes welcomeBloom{0%{opacity:0;transform:translateY(28px) scale(.96);filter:blur(5px)}55%{opacity:1;filter:blur(0)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes cakeFloatIn{0%{opacity:0;transform:translateY(45px) scale(.94)}65%{opacity:1;transform:translateY(-5px) scale(1.01)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes letterUnfold{0%{opacity:0;transform:perspective(900px) rotateX(-9deg) translateY(24px);filter:blur(3px)}70%{opacity:1;transform:perspective(900px) rotateX(2deg) translateY(-2px);filter:blur(0)}100%{opacity:1;transform:perspective(900px) rotateX(0) translateY(0)}}
+@keyframes memoryDrift{0%{opacity:0;transform:translateX(48px) scale(.97);filter:blur(4px)}65%{opacity:1;transform:translateX(-4px) scale(1.005);filter:blur(0)}100%{opacity:1;transform:translateX(0) scale(1)}}
+@keyframes finalSparkle{0%{opacity:0;transform:scale(.88) rotate(-1deg);filter:blur(6px)}60%{opacity:1;transform:scale(1.015) rotate(.3deg);filter:blur(0)}100%{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes pageLeave{to{opacity:0;transform:translateY(-12px) scale(.985);filter:blur(3px)}}
+@media(prefers-reduced-motion:reduce){.page.active,.page.leaving{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+.page-nav{display:flex;justify-content:center;align-items:center;gap:12px;margin:24px auto 0;flex-wrap:wrap}
+.page-count{font:12px Arial,sans-serif;letter-spacing:1px;color:#477fa8;min-width:94px}
+.page-nav button:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.page .card{margin-top:12px}
+
+.letter{text-align:left;white-space:pre-line;line-height:1.95;font-size:1.04rem;margin-top:20px}
+.rule{width:60px;height:2px;background:#91d2ff;margin:18px auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.tile{background:#eaf7ff;border:1px dashed #a8dcff;border-radius:16px;padding:17px 8px;font:13px Arial,sans-serif}
+.tile span{display:block;font-size:1.8rem;margin-bottom:7px}
+.memory-intro{max-width:520px;margin:0 auto 20px}
+.booth-stage{position:relative;margin:26px auto 18px;max-width:590px;padding:25px 16px 20px;border-radius:28px;background:radial-gradient(ellipse at top,#ffffff 0%,#f4fbff 55%,#e6f5ff 100%);border:1px solid #c9e8fb;box-shadow:inset 0 0 0 6px #ffffffa8,0 15px 35px #5d9fc31c;overflow:hidden}
+.booth-heading{font:11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#6499bb;margin:2px 0 18px}
+.photo-grid{display:flex;justify-content:center;align-items:flex-start;gap:clamp(14px,4vw,28px);margin:0 auto;max-width:490px;position:relative;z-index:1}
+.film-card{position:relative;width:min(44%,205px);padding:12px 10px 15px;background:#242126;border:5px solid #fff;border-radius:8px;box-shadow:0 10px 22px #477fa82b;transform:rotate(var(--tilt,-3deg));}
+.film-card:nth-child(2){--tilt:3deg;margin-top:25px}
+.film-card:before,.film-card:after{content:"";position:absolute;left:3px;right:3px;height:8px;background:repeating-linear-gradient(90deg,#fff 0 12px,transparent 12px 23px);opacity:.95}
+.film-card:before{top:2px}.film-card:after{bottom:2px}
+.film-card-title{font:9px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#fff;text-align:center;margin:4px 0 10px}
+.film-photo{height:clamp(90px,20vw,132px);margin:8px 0;background:linear-gradient(145deg,#f9e4ef,#e1f3ff);border:2px solid #fff;position:relative;overflow:hidden}
+.film-photo:before{content:"♡";position:absolute;inset:0;display:grid;place-items:center;font-size:26px;color:#d99db9}
+.film-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;z-index:1}
+.film-photo label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:5px;font:10px/1.3 Arial,sans-serif;color:#684d60;background:#fff9;cursor:pointer;z-index:2;text-align:center}
+.film-photo input{display:none}
+.film-caption{font:9px Arial,sans-serif;color:#fff;text-align:center;letter-spacing:.7px;margin:7px 0 1px}
+
+.sticker{position:absolute;z-index:3;pointer-events:none;filter:drop-shadow(0 2px 2px #6b9fbb20);font-size:clamp(22px,5vw,32px);transform:rotate(var(--rot,8deg))}
+.sticker-a{top:12px;left:13px;--rot:-14deg}.sticker-b{top:20px;right:15px;--rot:12deg}.sticker-c{bottom:13px;left:13px;--rot:8deg}.sticker-d{bottom:15px;right:16px;--rot:-12deg}
+.booth-note{font:12px/1.65 Arial,sans-serif;color:#6a94b0;margin:18px auto 0;max-width:440px}
+.memory-doodles{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin:17px auto 3px}
+.memory-doodles span{background:#ffffffc9;border:1px solid #d2ebfa;border-radius:18px;padding:8px 12px;box-shadow:0 5px 13px #477fa810;font-size:20px;transform:rotate(var(--r,0deg))}
+.small{font:12px/1.6 Arial,sans-serif;color:#477fa8}.background-music{position:fixed;width:1px;height:1px;left:-10px;top:-10px;opacity:0;pointer-events:none;border:0}
+.secret{font-size:1.18rem;line-height:1.9;color:#438fc7}
+footer{font:12px Arial,sans-serif;opacity:.72;margin-top:28px}
+.confetti{position:fixed;z-index:10;pointer-events:none;transition:transform 1.8s ease-out,opacity 1.8s}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.tile{padding:12px}.photo-grid{gap:12px}.film-card{padding:10px 6px 12px;border-width:4px}.film-photo{height:clamp(82px,25vw,112px)}.film-photo label{font-size:9px}.booth-stage{padding:23px 10px 16px}.sticker{font-size:23px}}
+</style>
+</head>
+<body>
+<div id="sky"></div>
+<!-- Hidden background audio. Keep music.mp3 in the same folder as this HTML file. -->
+<audio id="backgroundMusic" class="background-music" preload="auto" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+<main>  <section class="page active" data-page="0">
+
+  <div class="pill">a little cloud of love ♡</div>
+  <div class="bear-row" aria-label="cute teddy bears"><span class="bear-sticker">🧸</span><span class="bear-doodle">☁️</span><span class="bear-sticker">🧸</span></div>
+  <h1>Happy Birthday<span class="name">ARSHAD ANWAR NAVID</span><span aria-hidden="true">♡</span></h1>
+  <p class="lead">To my cutuuuuuu — today, this tiny corner of the internet belongs to you. I made it just for you, with a whole lot of love and a few little surprises. 💗<br><strong style="color:#438fc7">More than a year together, and I still fall for you more every day. ♡</strong></p>
+
+  </section>
+  <section class="page" data-page="1">
+  <section class="card">
+    <div class="bear-row"><span class="bear-doodle">🧸</span><span class="cake">🎂</span><span class="bear-doodle">🧸</span></div>
+    <h2>Make a birthday wish, cutuuuuuu!</h2>
+    <p>Close your eyes for a second, make your sweetest wish, and tap below. ✨</p>
+    <button id="wishBtn">Make your wish 💖</button>
+    <p id="wishText" class="hidden">I hope your wishes find their way to you, your hard days become easier, and this year gives you a thousand reasons to smile. You deserve so much happiness, my cutuuuuuu. 💞</p>
+  </section>
+  </section>
+  <section class="page" data-page="2">
+  <section class="card">
+    <h2>💌 A letter from me to you</h2>
+    <p>Some things deserve more than a simple birthday text…</p>
+    <button id="letterBtn">Open your love letter 💌</button>
+    <div id="letter" class="letter hidden">My dearest cutuuuuuu, ♡
+
+HAPPIEST BIRTHDAY TO YOUUUU! 🥹💗
+
+If I could give you one thing today, it would be the chance to see yourself through my eyes — so you could understand just how special you are to me.
+
+I hope this new year of your life brings you peace when things feel difficult, confidence when you doubt yourself, success in the things you work for, and little moments that make you genuinely happy. I hope you never forget how capable you are and how much good you deserve.
+
+Thank you for being someone who has such a special place in my heart. We've been together for more than a year now, and somehow I still keep falling for you more and more. Every little thing about you gives me another reason to adore you, and even after all this time, you still give me butterflies. I wish I could wrap up every lovely moment, every laugh, every silly memory, and every warm feeling and give them all to you as a birthday present.
+
+I can't promise every day will be perfect, but I hope there will always be reasons for us to smile, things to laugh about, and memories worth keeping. Today, I am celebrating YOU — your heart, your dreams, your existence, and the person you are becoming.
+
+Happy birthday again, my babuuuu. May this year be gentle with you and full of beautiful surprises. Keep smiling, keep dreaming, and never forget that you are loved. ❤️
+
+With so much love,
+Your putuuu ♡</div>
+  </section>
+  </section>
+  <section class="page" data-page="3">
+    <section class="card memory-page-card">
+      <div class="pill">little moments, forever ♡</div>
+      <h2>Our little photo booth 📸</h2>
+      <p class="memory-intro">A tiny scrapbook of us, decorated with the cutest little stickers. Add six favourite photos across two cute photo-booth film cards. 💙</p>
+      <div class="booth-stage">
+        <span class="sticker sticker-a" aria-hidden="true">🎀</span>
+        <span class="sticker sticker-b" aria-hidden="true">⭐</span>
+        <span class="sticker sticker-c" aria-hidden="true">🧸</span>
+        <span class="sticker sticker-d" aria-hidden="true">💌</span>
+        <div class="booth-heading">♡ our tiny collection ♡</div>
+        <div class="photo-grid">
+          <div class="film-card">
+            <span class="sticker sticker-a" aria-hidden="true">🎀</span>
+            <div class="film-card-title">♡ photo booth ♡</div>
+            <div class="film-photo"><label><span>📷</span><span>add a photo</span><input type="file" accept="image/*" data-photo="0"></label></div>
+            <div class="film-photo"><label><span>💗</span><span>add a memory</span><input type="file" accept="image/*" data-photo="1"></label></div>
+            <div class="film-photo"><label><span>🧸</span><span>add us</span><input type="file" accept="image/*" data-photo="2"></label></div>
+            <div class="film-caption">my favourite person ♡</div>
+          </div>
+          <div class="film-card">
+            <span class="sticker sticker-d" aria-hidden="true">🦋</span>
+            <div class="film-card-title">little memories</div>
+            <div class="film-photo"><label><span>🌷</span><span>add a photo</span><input type="file" accept="image/*" data-photo="3"></label></div>
+            <div class="film-photo"><label><span>💌</span><span>add a moment</span><input type="file" accept="image/*" data-photo="4"></label></div>
+            <div class="film-photo"><label><span>✨</span><span>one more</span><input type="file" accept="image/*" data-photo="5"></label></div>
+            <div class="film-caption">you + me, always ♡</div>
+          </div>
+        </div>
+        <div class="booth-note">made of tiny moments & big feelings · xoxo ♡</div>
+      </div>
+      <div class="memory-doodles" aria-label="cute stickers"><span style="--r:-8deg">🎀</span><span style="--r:5deg">🧸</span><span style="--r:-4deg">☁️</span><span style="--r:8deg">💌</span><span style="--r:-5deg">🦋</span><span style="--r:6deg">💙</span></div>
+      <p class="small">Photos you choose preview on this device. To show them to him too, the photos need to be included in the website files before publishing.</p>
+    </section>
+  </section>
+  <section class="page" data-page="4">
+  <section class="card">
+    <h2>🎁 One last surprise…</h2>
+    <p>There's a little message waiting just for you, birthday boy.</p>
+    <button id="surpriseBtn">Unlock your surprise 💝</button>
+    <p id="surprise" class="secret hidden">To my cutuuuuuu: I hope you feel celebrated today and on all the ordinary days, too. No fancy present could say everything I want you to know, so here's the simplest truth: you matter to me, so much. Happy birthday, babuuuu. Here's to more smiles, more memories, and more lovely little moments. ❤️✨</p>
+  </section>
+  </section>
+
+  <div class="bear-row"><span class="bear-sticker">🧸</span><span class="bear-sticker">💌</span><span class="bear-sticker">🧸</span></div>
+  <p class="secret">Made especially for you, cutuuuuuu. <span class="spark">♡</span></p>
+  <footer>blue skies • birthday wishes • lots of love ♡</footer>
+
+  <div class="page-nav" aria-label="Birthday pages navigation">
+    <button id="prevPage" class="secondary" type="button" disabled>← Previous</button>
+    <span id="pageCount" class="page-count">Page 1 of 5 ♡</span>
+    <button id="nextPage" type="button">Next page →</button>
+  </div>
+</main>
+<script>
+const pages=[...document.querySelectorAll('.page')];
+let currentPage=0;
+const prevPage=document.getElementById('prevPage');
+const nextPage=document.getElementById('nextPage');
+const pageCount=document.getElementById('pageCount');
+let pageIsTransitioning=false;
+function showPage(index){
+ const target=Math.max(0,Math.min(index,pages.length-1));
+ if(pageIsTransitioning||target===currentPage)return;
+ pageIsTransitioning=true;
+ const oldPage=pages[currentPage];
+ const next=pages[target];
+ // Keep the outgoing page visible briefly, then reveal the next page with its own animation.
+ oldPage.classList.remove('active');
+ oldPage.classList.add('leaving');
+ prevPage.disabled=true; nextPage.disabled=true;
+ window.scrollTo({top:0,behavior:'smooth'});
+ window.setTimeout(()=>{
+  oldPage.classList.remove('leaving');
+  oldPage.style.display='none';
+  next.style.display='block';
+  // Restart the page-specific animation each time the page is visited.
+  next.classList.remove('active');
+  void next.offsetWidth;
+  next.classList.add('active');
+  currentPage=target;
+  pages.forEach((page,i)=>{if(i!==currentPage){page.classList.remove('active');page.style.display='none';}});
+  prevPage.disabled=currentPage===0;
+  nextPage.disabled=false;
+  nextPage.textContent=currentPage===pages.length-1?'Start again ♡':'Next page →';
+  pageCount.textContent=`Page ${currentPage+1} of ${pages.length} ♡`;
+  window.setTimeout(()=>{pageIsTransitioning=false;},1150);
+ },460);
+}
+prevPage.addEventListener('click',()=>showPage(currentPage-1));
+nextPage.addEventListener('click',()=>showPage(currentPage===pages.length-1?0:currentPage+1));
+const backgroundMusic=document.getElementById('backgroundMusic');
+let backgroundMusicStarted=false;
+function startBackgroundMusic(){
+ if(backgroundMusicStarted)return;
+ backgroundMusicStarted=true;
+ backgroundMusic.currentTime=0;
+ backgroundMusic.play().catch(()=>{backgroundMusicStarted=false;});
+}
+document.addEventListener('pointerdown',startBackgroundMusic,{once:true});
+document.addEventListener('keydown',startBackgroundMusic,{once:true});
+const sky=document.getElementById('sky');
+const symbols=['♡','♥','💗','✨','💕'];
+for(let i=0;i<30;i++){
+ const e=document.createElement('span');e.className='floaty';e.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ e.style.left=Math.random()*100+'%';e.style.animationDuration=(8+Math.random()*11)+'s';e.style.animationDelay=(-Math.random()*18)+'s';e.style.fontSize=(14+Math.random()*23)+'px';sky.appendChild(e);
+}
+function burst(){for(let i=0;i<24;i++){const e=document.createElement('span');e.className='confetti';e.textContent=['💗','💖','✨','💕','♡'][Math.floor(Math.random()*5)];e.style.left=Math.random()*100+'vw';e.style.top=(25+Math.random()*55)+'vh';e.style.fontSize=(18+Math.random()*20)+'px';document.body.appendChild(e);requestAnimationFrame(()=>{e.style.transform=`translateY(-${80+Math.random()*190}px) rotate(${Math.random()*100-50}deg)`;e.style.opacity='0'});setTimeout(()=>e.remove(),1900)}}
+document.getElementById('wishBtn').onclick=()=>{document.getElementById('wishText').classList.remove('hidden');document.getElementById('wishBtn').textContent='Wish sent with love 💖';burst()};
+document.getElementById('letterBtn').onclick=()=>{const el=document.getElementById('letter');el.classList.toggle('hidden');document.getElementById('letterBtn').textContent=el.classList.contains('hidden')?'Open your love letter 💌':'Close your letter ♡'};
+document.getElementById('surpriseBtn').onclick=()=>{document.getElementById('surprise').classList.remove('hidden');document.getElementById('surpriseBtn').textContent='Surprise unlocked 💝';burst()};
+document.querySelectorAll('input[data-photo]').forEach(input=>input.addEventListener('change',event=>{const file=event.target.files&&event.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{const slot=input.closest('.film-photo');let img=slot.querySelector('img');if(!img){img=document.createElement('img');img.alt='Your chosen memory';slot.appendChild(img)}img.src=reader.result;slot.querySelector('label').style.background='#ffffffb8';slot.querySelector('label').style.zIndex='1';slot.querySelector('label').textContent='Change photo';slot.querySelector('label').appendChild(input)};reader.readAsDataURL(file)}));
+</script>
+</body>
+</html>
